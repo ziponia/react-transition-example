@@ -1,44 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 리액트 트랜지션 사용하기
 
-## Available Scripts
+리액트에 라우터 트랜지션을 적용 해 보았다.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+git clone https://github.com/ziponia/react-transition-example.git transition_example
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+cd transition_example && npm install
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+npm start
 
-### `npm test`
+connect to http://127.0.0.1:3000
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### 적용하면서 힘들었던 점
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+예제 코드가 모두 react-transition-group 이 거의 v1 예제밖에 안나와있어 알아보는데 좀 고생했다.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+특히, src/pages/TaskPage.js 에 거의 모든 사용법이 나와있는데
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+in 속성과 unmountOnExit 속성을 지정하는데있어, 이 두가지가 없으면, 생각대로 작동하지 않았다.
 
-### `npm run eject`
+추후에 하면서 조금씩 속성들에 대해서 알아 볼 생각이다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+in 속성에 경우 this.state.visible && (JSX.Element) 를 대체 하는 것 같다. ( 조건부 랜더링 )
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+어쨋든 잘 됬으니 만족 :)
