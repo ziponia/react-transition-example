@@ -4,11 +4,9 @@
 
 ## Getting Started
 
-git clone https://github.com/ziponia/react-transition-example.git transition_example
-
-cd transition_example && npm install
-
-npm start
+`git clone https://github.com/ziponia/react-transition-example.git transition_example`
+`cd transition_example && npm install`
+`npm start`
 
 connect to http://127.0.0.1:3000
 
