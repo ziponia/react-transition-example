@@ -28,3 +28,5 @@ in 속성과 unmountOnExit 속성을 지정하는데있어, 이 두가지가 없
 in 속성에 경우 this.state.visible && (JSX.Element) 를 대체 하는 것 같다. ( 조건부 랜더링 )
 
 어쨋든 잘 됬으니 만족 :)
+
+- 참조 사이트 https://reactcommunity.org/react-transition-group/
