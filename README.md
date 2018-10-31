@@ -4,9 +4,9 @@
 
 ## Getting Started
 
-`git clone https://github.com/ziponia/react-transition-example.git transition_example`
+`git clone https://github.com/ziponia/react-transition-example.git react-transition_example`
 
-`cd transition_example && npm install`
+`cd react-transition_example && npm install`
 
 `npm start`
 
